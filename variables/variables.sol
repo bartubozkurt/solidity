@@ -27,7 +27,7 @@ contract Variables{
         uint ID;
         string name;
         uint age;
-        address address;
+        address Address;
     }
 
     // mapping(uint => Human) list2;
@@ -37,12 +37,78 @@ contract Variables{
     // person1.ID = 123456;
     // person1.name = "Marco";
     // person1.age = 23;
-    // person1.address = 0x..........;
+    // person1.Address = 0x..........;
 
     enum trafficlight{
         RED,
         YELLOW,
         GREEN
     }
+
+    // operators
+
+    // ! (logical negation)
+    // && (logical conjunction, “and”)
+    // || (logical disjunction, “or”)
+    // == (equality)
+    // != (inequality)
+
+
+    // ether birimleri
+
+    // 1 wei = 1
+    // 1 gwei = 10^9
+    // 1 ether = 10^18
+
+    // zaman birimleri 
+
+    // 1 == 1 seconds
+    // 1 minutes == 60 seconds
+    // 1 hours == 60 minutes
+    // 1 days == 24 hours
+    // 1 weeks == 7 days
+
+
+
+
+    // Pure : that will read the storage(hence viewing)
+    // View : There will be no read or write to storage and only local variable will be used
+
+
+    // STATE Variables
+
+    string public bestClub = "itu blockchain";
+    uint256 public founded = 2018;
+    bool private rich = false;
+
+    function add(int256 _number) public pure retur25ns (int6) {
+        // Local Variables
+        int256 minus = -1;
+        int256 lucky = 33;
+
+        return _number + minus + lucky;
+    }
+
+
+    // GLOBAL Variables
+
+    function show_2() public view returns(uint){
+        return block.number;
+    }
+
+    function show_3() public view returns(address){
+        return msg.sender;
+    }   
+
+    //Global Variables
+
+    // block.difficulty (uint)	Current block difficulty
+    // block.gaslimit (uint)	Current block gaslimit
+    // block.number (uint)	Current block number
+    // block.timestamp (uint)	Current block timestamp as seconds since unix epoch
+    // msg.data (bytes calldata)	Complete calldata
+    // msg.sender (address payable)
+
+
 
 }
