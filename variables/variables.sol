@@ -81,7 +81,7 @@ contract Variables{
     uint256 public founded = 2018;
     bool private rich = false;
 
-    function add(int256 _number) public pure retur25ns (int6) {
+    function add(int256 _number) public pure returns (int256) {
         // Local Variables
         int256 minus = -1;
         int256 lucky = 33;
