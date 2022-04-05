@@ -72,7 +72,7 @@ contract Variables{
 
 
     // Pure : that will read the storage(hence viewing)
-    // View : There will be no read or write to storage and only local variable will be used
+    // View : There will be no read or write to storage and only local variable will be used | A view function can read state-variables, but it cannot write (modify) them.
 
 
     // STATE Variables
